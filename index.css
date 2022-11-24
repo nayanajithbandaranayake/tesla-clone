@@ -43,6 +43,7 @@ header {
   display: flex;
   background: transparent;
   justify-content: space-between;
+  z-index: 10;
 }
 
 header .model-links {
@@ -101,4 +102,19 @@ header a {
 .logo img {
   width: 120px;
   margin-left: 10px;
+}
+
+#slider {
+  border-radius: 6px;
+  background: #444;
+  position: absolute;
+  z-index: -10;
+  opacity: 0;
+  transition: left 0.25s cubic-bezier(0.86, 0.14, 0.34, 1.02), opacity 0.8s ease;
+}
+
+.header-link {
+  z-index: 20;
+  padding: 6px;
+  display: inline-block;
 }
